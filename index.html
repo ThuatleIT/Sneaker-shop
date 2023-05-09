@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+
+
+        <!--Author Pro-->
+        <div class="modal hide">
+            <div class="modal__overlay hide"></div>
+            <div class="authorPro hide">
+                <div class="author-form">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button class="toggle-btn" onclick="login()">Login</button>
+                        <button class="toggle-btn" onclick="register()">Register</button>
+                    </div>
+                    <form id="login" class="input-group">
+                        <h2 class="form-heading">Login here</h2>
+                        <input type="text" class="input-field" placeholder="User Id">
+                        <input type="password" class="input-field" placeholder="Enter password">
+                        <div class="form-check">
+                            <input type="checkbox" id="check-pass" class="check-box">
+                            <label class="check-text" for="check-pass">Remmerber password</label>
+                        </div>
+                        <button class="submit-btn" type="submit">Login</button>
+                    </form>
+                    <form id="Register" class="input-group">
+                        <h2 class="form-heading">Register here</h2>
+                        <input type="text" class="input-field" placeholder="User Id">
+                        <input type="password" class="input-field" placeholder="Enter password">
+                        <input type="password" class="input-field" placeholder="Re-enter your password">
+                        <input type="email" class="input-field" placeholder="Enter email">
+                        <input type="text" class="input-field" placeholder="Enter numberphone">
+                        <button class="submit-btn" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Searh Pro-->
+        <div class="searchPro hide">
+            <form action="search">
+                <div class="search-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="search__form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="" placeholder="Search">
+                </div>
+            </form>
+        </div>
+
+        <!--Cart Pro-->
+        <div class="cartPro hide">
+            <H3>YOUR CART</H3>
+            <div class="cart__list">
+                <div class="cart__item">
+                    <img src="assets/images/sp1.jpg" alt="">
+                    <div>
+                        <h5 class="cart__item-name">NIKE AIR MAX 1 PATTA WAVES MONARCH (WITH BRACELET)</h5>
+                        <p class="cart__item-price">6.800.000 đ</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Nav bar mobile-->
+        <div class="modal-mobile hide">
+            <div class="modal__overlay-mobile"></div>
+            <nav class="nav__mobile">
+                <div class="nav__mobile-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="nav__mobile-list">
+                    <li class="nav__mobile-search">
+                        <span class="nav__mobile-list-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="search" id=" search" placeholder="Nhập sản phẩm cần tìm">
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">ACCOUNT</a>
+    
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">CART</a>
+    
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">NEW</a>
+    
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">SALE</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">ADIDAS
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <ul class="nav__mobile-link-list">
+                            <li>ULTRABOOST</li>
+                            <li>ZX K2 BOOT</li>
+                            <li>ALPHABOUNCE</li>
+                            <li>EQT+</li>
+                            <li>X9000L4</li>
+                            <li>STAN SMITH</li>
+                            <li>SUPERSTART</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">NIKE
+                            <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nav__mobile-link-list">
+                            <li>SB DUNK</li>
+                            <li>JORDAN</li>
+                            <li>AIR FORCE 1</li>
+                            <li>PEGASUS</li>
+                            <li>AiR MAX</li>
+                            <li>M2k</li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </nav>
+
+        </div>
+        
+
+        <!--Header-->
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="nav__bar-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="">Shoes Shop</a>
+                    <div class="header__right">
+                        <div class="header__auth">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </div>
+                        <div class="header__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header__cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="menu">
+                    <div class="menu__inner">
+                        <!--Nav pc-->
+                        <nav class="nav__pc">
+                            <ul class="nav__list">
+                                <li>
+                                    <a href="">
+                                        <span>Features</span>
+                                    </a>
+                                <li>
+                                    <a href="">
+                                        <span>Footwear</span>
+                                    </a>
+                                    <div class="menu__sub">
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    Newest Sneaker
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Lifestyle
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Running
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Basketball
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Gym & Training
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Sandal
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    Soccer
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li>
+                                    <a href="">
+                                        <span>Apparel</span>
+                                        <div class="menu__sub">
+                                            <ul>
+                                                <li>
+                                                    <a href="">Hoodies</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Shorts</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Outerwears</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Tees</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Pants</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Shirts</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Jackets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Swearter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Vintage</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                <li>
+                                    <a href="">
+                                        <span>Accessories</span>
+                                    </a>
+                                    <div class="menu__sub">
+                                        <ul>
+                                            <li>
+                                                <a href="">Watch</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Socks</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Cap</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Blackpack And Bag</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Shoes Care</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bearbrick</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li>
+                                    <a href="">
+                                        <span>Used</span>
+                                    </a>
+                                <li>
+                                    <a href="">
+                                        <span>Sale</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <div class="container">
+            <!--carousel slide-->
+            <div class="carousel__container">
+                <div class="slider__list">
+                    <div class="slick-slide slick-clone">
+                        <div>
+                            <a href="">
+                                <img class="image" src=" assets/images/1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slick-slide slick-clone">
+                        <div>
+                            <a href="">
+                                <img class="image" src="assets/images/2.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slick-slide slick-clone">
+                        <div>
+                            <a href="">
+                                <img class="image" src="assets/images/3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider__control">
+                    <div class="slider__prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="slider__next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!--Product-->
+            <div class="container">
+                <h2>Product</h2>
+                <div class="grid wide container">
+                    <div class="wrap__product row">
+                        <!--GET PRODUCT-->
+                    </div>
+                    <div class="load__product"><button class="see-more">See More</button></div>
+                </div>
+            </div>
+
+            <!--Slide Block 3-->
+            <div class="container slide__block grid wide">
+                <div class="row">
+                    <div class="block col l-4 m-6 c-12">
+                        <img class="lazy" src="assets/images/block1.png" alt="">
+                        <div class="desc">
+                            <h2><a href="">streetwear</a></h2>
+                        </div>
+                    </div>
+
+                    <div class="block col l-4 m-6 c-12">
+                        <img class="lazy" src="assets/images/block2.png" alt="">
+                        <div class="desc">
+                            <h2><a href="">sneaker</a></h2>
+                        </div>
+                    </div>
+                    <div class="block col l-4 m-6 c-12">
+                        <img class="lazy" src="assets/images/block3.png" alt="">
+                        <div class="desc">
+                            <h2><a href="">accessories</a></h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!--Footer-->
+            <footer class="footer">
+                <div class="footer grid wide">
+                    <div class="row">
+                        <div class="footer__content col l-4 m-4 c-4">
+                            <h3 class="footer__heading">Service & Support</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">Trung tâm trợ giúp</li>
+                                <li class="footer__item">0334667783</li>
+                                <li class="footer__item">Locations</li>
+                            </ul>
+                        </div>
+                        <div class="footer__content col l-4 m-4 c-4">
+                            <h3 class="footer__heading">Info</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">Consignment Terms</li>
+                                <li class="footer__item">Connect with Us</li>
+                                <li class="footer__item">Delivery and Return</li>
+                                <li class="footer__item">FAQs</li>
+                            </ul>
+                        </div>
+                        <div class="footer__content col l-4 m-4 c-4">
+                            <h3 class="footer__heading">Follow Us</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">Facebook</li>
+                                <li class="footer__item">Instagram</li>
+                                <li class="footer__item">Youtube</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="grid wide">
+                            <p class="footer__text">Copyright © ShoesShop</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+</body>
+<script src="assets/javascript/app.js"></script>
+<script src="https://kit.fontawesome.com/2e80b99c40.js" crossorigin="anonymous"></script>
+
+</html>
